@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="run" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES"/>
+    <option name="HIDE_BANNER" value="true"/>
+    <module name="kotlin-springboot-demo.main"/>
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication"/>
+    <method v="2">
+      <option name="Make" enabled="true"/>
+    </method>
+  </configuration>
+</component>

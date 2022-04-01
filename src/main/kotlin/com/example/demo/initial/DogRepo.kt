@@ -1,5 +1,5 @@
 package com.example.demo.initial
 
-import org.springframework.data.jpa.repository.JpaRepository
+import com.example.demo.base.dataaccess.repository.BaseSimpleRepo
 
-interface DogRepo : JpaRepository<DogEntity, Long>
+interface DogRepo : BaseSimpleRepo<DogEntity>

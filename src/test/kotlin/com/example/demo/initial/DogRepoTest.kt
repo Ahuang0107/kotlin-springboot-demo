@@ -10,16 +10,16 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = NONE)
 internal class DogRepoTest @Autowired constructor(
-    private val dogRepo: DogRepo
+  private val dogRepo: DogRepo
 ) {
 
-    @Test
-    fun testData() {
-        val dog = DogEntity("Golden Retriever")
+  @Test
+  fun testData() {
+    val dog = DogEntity("Golden Retriever")
 
-        val savedDog = dogRepo.save(dog)
-        val findDog = dogRepo.findById(savedDog.id!!).get()
+    val savedDog = dogRepo.save(dog)
+    val findDog = dogRepo.findById(savedDog.id).get()
 
-        assertThat(findDog).isEqualTo(dog)
-    }
+    assertThat(findDog).isEqualTo(dog)
+  }
 }

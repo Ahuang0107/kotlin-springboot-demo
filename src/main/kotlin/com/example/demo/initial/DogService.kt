@@ -1,20 +1,9 @@
 package com.example.demo.initial
 
+import com.example.demo.base.dataaccess.service.BaseSimpleService
 import org.springframework.stereotype.Service
 
 @Service
 class DogService(
-    private val repo: DogRepo,
-) {
-    fun findAll(): List<DogEntity> {
-        return repo.findAll()
-    }
-
-    fun findById(id: Long): DogEntity {
-        return repo.findById(id).get()
-    }
-
-    fun save(dog: DogEntity): DogEntity {
-        return repo.save(dog)
-    }
-}
+  override val repo: DogRepo,
+) : BaseSimpleService<DogEntity>

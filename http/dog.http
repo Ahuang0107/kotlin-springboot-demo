@@ -1,2 +1,7 @@
-GET /dog/all
+### hello world
+GET /api/dog/public
+Host: {{host}}:{{port}}
+
+### get all dog
+GET /api/dog/all
 Host: {{host}}:{{port}}
