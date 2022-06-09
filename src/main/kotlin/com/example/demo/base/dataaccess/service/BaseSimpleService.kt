@@ -25,6 +25,9 @@ interface BaseSimpleService<E : BaseSimpleEntity> {
   fun save(entity: E): E =
     repo.save(entity)
 
+  fun saveAndFlush(entity: E): E =
+    repo.saveAndFlush(entity)
+
   fun saveAll(entities: List<E>): List<E> {
     return if (entities.isNotEmpty()) {
       repo.saveAll(entities)
