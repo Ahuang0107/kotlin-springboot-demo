@@ -1,12 +1,17 @@
 # Kotlin Springboot Demo
 
+## start
+
+1. 首先如果是在windows系统上使用docker，那么mysql容器挂载的my.cnf会被修改权限，导致容器内会忽略该配置，需要进入容器`cd etc/mysql`，然后修改权限`chmod 644 my.cnf`
+   ，然后再重启容器，此时配置才生效。
+
 ## Restful API
 
 ## MVC Architecture
 
 * controller layer provide api
 * facade layer provide business logic
-  * facade repository layer provide complex (business level) querydsl function
+    * facade repository layer provide complex (business level) querydsl function
 * service layer provide database operations
     * repo layer provide jpa function
     * repository layer provide querydsl function

@@ -6,3 +6,7 @@ services:
       - "13306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - ./mysql/conf/my.cnf:/etc/mysql/my.cnf
+      - ./mysql/mysql-files:/var/lib/mysql-files
+      - ./mysql/data:/var/lib/mysql
