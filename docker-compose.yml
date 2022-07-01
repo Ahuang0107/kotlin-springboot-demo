@@ -10,3 +10,8 @@ services:
       - ./mysql/conf/my.cnf:/etc/mysql/my.cnf
       - ./mysql/mysql-files:/var/lib/mysql-files
       - ./mysql/data:/var/lib/mysql
+  redis:
+    container_name: demo_redis
+    image: redis
+    ports:
+      - "16379:6379"
