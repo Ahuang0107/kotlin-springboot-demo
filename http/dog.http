@@ -25,5 +25,5 @@ Content-Type: application/json
 }
 
 ### delete dog
-DELETE /api/dog/delete?id=1555254579032100864
+DELETE /api/dog/delete?id=1555254607108771840
 Host: {{host}}:{{port}}
