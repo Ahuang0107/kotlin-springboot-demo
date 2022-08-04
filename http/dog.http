@@ -5,3 +5,25 @@ Host: {{host}}:{{port}}
 ### get all dog
 GET /api/dog/all
 Host: {{host}}:{{port}}
+
+### create dog
+POST /api/dog/create
+Host: {{host}}:{{port}}
+Content-Type: application/json
+
+{
+    "name": "Golden Retriever"
+}
+
+### update dog
+PUT /api/dog/update?id=1555254607108771840
+Host: {{host}}:{{port}}
+Content-Type: application/json
+
+{
+    "name": "Border Collie"
+}
+
+### delete dog
+DELETE /api/dog/delete?id=1555254579032100864
+Host: {{host}}:{{port}}

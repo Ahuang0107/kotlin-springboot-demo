@@ -13,8 +13,7 @@ interface BaseSimpleService<E : BaseSimpleEntity> {
     repo.findById(id).orElse(null)
 
   fun findAllById(idList: List<Long>): List<E> =
-    if (idList.isEmpty()) emptyList()
-    else repo.findAllById(idList)
+    repo.findAllById(idList)
 
   fun findAll(): List<E> =
     repo.findAll()
@@ -28,9 +27,12 @@ interface BaseSimpleService<E : BaseSimpleEntity> {
   fun saveAndFlush(entity: E): E =
     repo.saveAndFlush(entity)
 
-  fun saveAll(entities: List<E>): List<E> {
-    return if (entities.isNotEmpty()) {
-      repo.saveAll(entities)
-    } else entities
-  }
+  fun saveAll(entities: List<E>): List<E> =
+    repo.saveAll(entities)
+
+  fun deleteById(id: Long) =
+    repo.deleteById(id)
+
+  fun deleteAllById(idList: List<Long>) =
+    repo.deleteAllById(idList)
 }

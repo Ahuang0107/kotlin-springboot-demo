@@ -1,5 +1,5 @@
 package com.example.demo.initial
 
-import com.example.demo.base.dataaccess.repository.BaseRepo
+import com.example.demo.base.dataaccess.repository.BaseSimpleRepo
 
-interface DogRepo : BaseRepo<DogEntity>
+interface DogRepo : BaseSimpleRepo<DogEntity>

@@ -1,15 +1,14 @@
+version: "3"
 services:
-  mysql:
-    container_name: demo_mysql_database
-    image: mysql
+  postgres:
+    container_name: demo_postgres
+    image: postgres
     ports:
-      - "13306:3306"
+      - "15432:5432"
     environment:
-      MYSQL_ROOT_PASSWORD: 123456
-    volumes:
-      - ./mysql/conf/my.cnf:/etc/mysql/my.cnf
-      - ./mysql/mysql-files:/var/lib/mysql-files
-      - ./mysql/data:/var/lib/mysql
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: demo
   redis:
     container_name: demo_redis
     image: redis
