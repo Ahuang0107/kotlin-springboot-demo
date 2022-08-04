@@ -1,5 +1,5 @@
-drop table if exists d_dog;
-create table d_dog
+drop table if exists p_project;
+create table p_project
 (
     id        bigint                   not null,
     name      varchar(255)             null,

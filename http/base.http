@@ -1,0 +1,3 @@
+### hello world
+GET /api/project/public
+Host: {{host}}:{{port}}

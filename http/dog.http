@@ -1,13 +1,9 @@
-### hello world
-GET /api/dog/public
+### get all project
+GET /api/project/all
 Host: {{host}}:{{port}}
 
-### get all dog
-GET /api/dog/all
-Host: {{host}}:{{port}}
-
-### create dog
-POST /api/dog/create
+### create project
+POST /api/project/create
 Host: {{host}}:{{port}}
 Content-Type: application/json
 
@@ -15,8 +11,8 @@ Content-Type: application/json
     "name": "Golden Retriever"
 }
 
-### update dog
-PUT /api/dog/update?id=1555254607108771840
+### update project
+PUT /api/project/update?id=1555254607108771840
 Host: {{host}}:{{port}}
 Content-Type: application/json
 
@@ -24,6 +20,6 @@ Content-Type: application/json
     "name": "Border Collie"
 }
 
-### delete dog
-DELETE /api/dog/delete?id=1555254607108771840
+### delete project
+DELETE /api/project/delete?id=1555254607108771840
 Host: {{host}}:{{port}}
