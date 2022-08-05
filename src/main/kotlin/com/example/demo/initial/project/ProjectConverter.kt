@@ -2,6 +2,8 @@ package com.example.demo.initial.project
 
 fun ProjectEntity.updateFrom(req: UpdateProjectReq): ProjectEntity {
   return this.apply {
-    name = req.name
+    projectName = req.projectName
+    engageCode = req.engageCode
+    totalFee = req.totalFee
   }
 }

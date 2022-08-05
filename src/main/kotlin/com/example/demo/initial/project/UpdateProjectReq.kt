@@ -1,5 +1,7 @@
 package com.example.demo.initial.project
 
 data class UpdateProjectReq(
-  val name: String = "",
+  var projectName: String = "",
+  var engageCode: String = "",
+  var totalFee: Double = .0,
 )

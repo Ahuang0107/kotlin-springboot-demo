@@ -1,0 +1,48 @@
+### get all project
+GET /api/project/all
+Host: {{host}}:{{port}}
+
+### create project
+POST /api/project/create
+Host: {{host}}:{{port}}
+Content-Type: application/json
+
+{
+    "projectName": "Reporting Consult",
+    "engageCode": "21664158"
+}
+
+### update project
+PUT /api/project/update?id=1555417482884419584
+Host: {{host}}:{{port}}
+Content-Type: application/json
+
+{
+    "projectName": "Reporting Consult",
+    "engageCode": "21664158",
+    "totalFee": 100000000
+}
+
+### start project
+PUT /api/project/start?id=1555417482884419584
+Host: {{host}}:{{port}}
+
+### submit project
+PUT /api/project/submit?id=1555417482884419584
+Host: {{host}}:{{port}}
+
+### pass project
+PUT /api/project/pass?id=1555417482884419584
+Host: {{host}}:{{port}}
+
+### reject project
+PUT /api/project/reject?id=1555417482884419584
+Host: {{host}}:{{port}}
+
+### close project
+PUT /api/project/close?id=1555417482884419584
+Host: {{host}}:{{port}}
+
+### delete project
+DELETE /api/project/delete?id=1555254607108771840
+Host: {{host}}:{{port}}
