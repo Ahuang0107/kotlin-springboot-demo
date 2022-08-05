@@ -2,6 +2,10 @@
 GET /api/project/all
 Host: {{host}}:{{port}}
 
+### get all project backups
+GET /api/project/all-backup?id=1555417482884419584
+Host: {{host}}:{{port}}
+
 ### create project
 POST /api/project/create
 Host: {{host}}:{{port}}
@@ -20,23 +24,11 @@ Content-Type: application/json
 {
     "projectName": "Reporting Consult",
     "engageCode": "21664158",
-    "totalFee": 100000000
+    "totalFee": 200
 }
 
-### start project
-PUT /api/project/start?id=1555417482884419584
-Host: {{host}}:{{port}}
-
-### submit project
-PUT /api/project/submit?id=1555417482884419584
-Host: {{host}}:{{port}}
-
-### pass project
-PUT /api/project/pass?id=1555417482884419584
-Host: {{host}}:{{port}}
-
-### reject project
-PUT /api/project/reject?id=1555417482884419584
+### update project stage
+PUT /api/project/update-stage?id=1555417482884419584&targetStage=RMA
 Host: {{host}}:{{port}}
 
 ### close project
