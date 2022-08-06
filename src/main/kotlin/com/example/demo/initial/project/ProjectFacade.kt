@@ -43,6 +43,6 @@ class ProjectFacade(
   }
 
   fun deleteProject(id: Long) {
-    projectService.deleteById(id)
+    projectService.delete(id)
   }
 }

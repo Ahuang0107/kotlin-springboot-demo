@@ -30,9 +30,9 @@ interface BaseSimpleService<E : BaseSimpleEntity> {
   fun saveAll(entities: List<E>): List<E> =
     repo.saveAll(entities)
 
-  fun deleteById(id: Long) =
+  fun delete(id: Long) =
     repo.deleteById(id)
 
-  fun deleteAllById(idList: List<Long>) =
+  fun delete(idList: List<Long>) =
     repo.deleteAllById(idList)
 }

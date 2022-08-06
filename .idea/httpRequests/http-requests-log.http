@@ -1,3 +1,168 @@
+POST http://localhost:10110/api/member/create
+Host: localhost:10110
+Content-Type: application/json
+
+{
+    "relProjectId": 1555817243147898880,
+    "memberGpn": "CN011002428",
+    "hours": [
+        {
+            "hour": 10,
+            "date": "2022-08-06"
+        },
+        {
+            "hour": 8,
+            "date": "2022-08-07"
+        }
+    ]
+}
+
+<> 2022-08-06T153320.200.json
+
+###
+
+POST http://localhost:10110/api/member/create
+Host: localhost:10110
+Content-Type: application/json
+
+{
+    "relProjectId": 1555817243147898880,
+    "memberGpn": "CN011002428",
+    "hours": [
+        {
+            "hour": 10,
+            "date": "2022-08-06"
+        },
+        {
+            "hour": 8,
+            "date": "2022-08-07"
+        }
+    ]
+}
+
+<> 2022-08-06T153035.500.json
+
+###
+
+POST http://localhost:10110/api/member/create
+Host: localhost:10110
+Content-Type: application/json
+
+{
+    "relProjectId": 1555817243147898880,
+    "memberGpn": "CN011002428",
+    "hours": [
+        {
+            "hours": 10,
+            "date": "2022-08-06"
+        },
+        {
+            "hours": 8,
+            "date": "2022-08-07"
+        }
+    ]
+}
+
+<> 2022-08-06T152826.500.json
+
+###
+
+POST http://localhost:10110/api/member/create
+Host: localhost:10110
+Content-Type: application/json
+
+{
+    "relProjectId": 1555817243147898880,
+    "memberGpn": "CN011002428",
+    "hours": [
+        {
+            "hours": 10,
+            "date": "2022-08-06"
+        },
+        {
+            "hours": 8,
+            "date": "2022-08-07"
+        }
+    ]
+}
+
+<> 2022-08-06T152742.500.json
+
+###
+
+POST http://localhost:10110/api/member/create
+Host: localhost:10110
+Content-Type: application/json
+
+{
+    "relProjectId": 1555817243147898880,
+    "memberGpn": "CN011002428",
+    "hours": [
+        {
+            "hours": 10,
+            "date": "2022-08-06"
+        },
+        {
+            "hours": 8,
+            "date": "2022-08-07"
+        }
+    ]
+}
+
+<> 2022-08-06T152736.500.json
+
+###
+
+POST http://localhost:10110/api/member/create
+Host: localhost:10110
+Content-Type: application/json
+
+{
+    "relProjectId": 1555817243147898880,
+    "memberGpn": "CN011002428",
+    "hours": [
+        {
+            "hours": 10,
+            "date": "2022-08-06"
+        },
+        {
+            "hours": 8,
+            "date": "2022-08-07"
+        }
+    ]
+}
+
+<> 2022-08-06T152704.500.json
+
+###
+
+POST http://localhost:10110/api/project/create
+Host: localhost:10110
+Content-Type: application/json
+
+{
+    "projectName": "Reporting Consult",
+    "engageCode": "21664158"
+}
+
+<> 2022-08-06T152511.200.json
+
+###
+
+DELETE http://localhost:10110/api/member/delete?id=1555254607108771840
+Host: localhost:10110
+
+<> 2022-08-06T144107.500.json
+
+###
+
+GET http://localhost:10110/api/member/all?projectId=1
+Host: localhost:10110
+
+<> 2022-08-06T144103.200.json
+
+###
+
 PUT http://localhost:10110/api/project/pass?id=1555417482884419584
 Host: localhost:10110
 
@@ -374,99 +539,6 @@ GET http://localhost:10110/api/dog/all
 Host: localhost:10110
 
 <> 2022-04-29T233346.200.json
-
-###
-
-POST http://localhost:10110/api/dog
-Host: localhost:10110
-Content-Type: application/json
-
-{
-    "name": "Golden Retriever"
-}
-
-<> 2022-04-29T233343.200.json
-
-###
-
-GET http://localhost:10110/api/dog/all
-Host: localhost:10110
-
-<> 2022-04-29T232740.200.json
-
-###
-
-POST http://localhost:10110/api/dog
-Host: localhost:10110
-Content-Type: application/json
-
-{
-    "name": "Golden Retriever"
-}
-
-<> 2022-04-29T232738.200.json
-
-###
-
-POST http://localhost:10110/api/dog
-Host: localhost:10110
-Content-Type: application/json
-
-{
-    "name": "Golden Retriever"
-}
-
-<> 2022-04-29T232737.200.json
-
-###
-
-POST http://localhost:10110/api/dog
-Host: localhost:10110
-Content-Type: application/json
-
-{
-    "name": "Golden Retriever"
-}
-
-<> 2022-04-29T232736.200.json
-
-###
-
-GET http://localhost:10110/api/dog/all
-Host: localhost:10110
-
-<> 2022-04-29T232734.200.json
-
-###
-
-GET http://localhost:10110/api/dog/public
-Host: localhost:10110
-
-<> 2022-04-29T232732.200.json
-
-###
-
-POST http://localhost:10110/api/dog
-Host: localhost:10110
-Content-Type: application/json
-
-{
-    "name": "Golden Retriever"
-}
-
-<> 2022-04-29T232022.200.json
-
-###
-
-POST http://localhost:10110/api/dog
-Host: localhost:10110
-Content-Type: application/json
-
-{
-    "name": "Golden Retriever"
-}
-
-<> 2022-04-29T231941.200.json
 
 ###
 

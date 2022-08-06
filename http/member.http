@@ -1,0 +1,27 @@
+### get all member by project id
+GET /api/member/all?projectId=1
+Host: {{host}}:{{port}}
+
+### create member
+POST /api/member/create
+Host: {{host}}:{{port}}
+Content-Type: application/json
+
+{
+    "relProjectId": 1555817243147898880,
+    "memberGpn": "CN011002428",
+    "hours": [
+        {
+            "hour": 10,
+            "date": "2022-08-06"
+        },
+        {
+            "hour": 8,
+            "date": "2022-08-07"
+        }
+    ]
+}
+
+### delete member
+DELETE /api/member/delete?id=1555254607108771840
+Host: {{host}}:{{port}}

@@ -1,0 +1,18 @@
+package com.example.demo.initial.member
+
+import com.example.demo.base.dataaccess.entity.BaseEntity
+import org.hibernate.annotations.Type
+import javax.persistence.MappedSuperclass
+
+@MappedSuperclass
+open class MemberEntityBase(
+  var relProjectId: Long = 0,
+  var memberName: String = "",
+  var memberGpn: String = "",
+  var totalHours: Double = .0,
+  var totalSer: Double = .0,
+  @Type(type = "json")
+  var statistics: MemberStatistics? = null,
+  @Type(type = "json")
+  var hours: List<Hour> = emptyList(),
+) : BaseEntity()

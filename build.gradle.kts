@@ -27,6 +27,7 @@ dependencies {
   implementation("cn.hutool:hutool-core:5.8.0")
 
   implementation("com.google.code.gson:gson:2.9.0")
+  implementation("com.vladmihalcea:hibernate-types-52:2.16.3")
 
   runtimeOnly("org.postgresql:postgresql:42.3.6")
 

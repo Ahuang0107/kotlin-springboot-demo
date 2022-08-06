@@ -33,3 +33,19 @@ create table p_project_bak
     update_at      timestamp with time zone not null,
     primary key (id)
 );
+
+drop table if exists p_member;
+create table p_member
+(
+    id             bigint                   not null,
+    rel_project_id bigint                   not null,
+    member_name    varchar(255)             not null,
+    member_gpn     varchar(255)             not null,
+    total_hours    decimal(12, 2)           not null default 0,
+    total_ser      decimal(12, 2)           not null default 0,
+    statistics     json                     null,
+    hours          json                     not null,
+    create_at      timestamp with time zone not null,
+    update_at      timestamp with time zone not null,
+    primary key (id)
+);
