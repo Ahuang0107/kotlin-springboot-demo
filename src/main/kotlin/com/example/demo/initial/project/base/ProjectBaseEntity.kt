@@ -1,6 +1,7 @@
-package com.example.demo.initial.project
+package com.example.demo.initial.project.base
 
 import com.example.demo.base.dataaccess.entity.BaseEntity
+import com.example.demo.initial.project.ProjectStage
 import javax.persistence.EnumType
 import javax.persistence.Enumerated
 import javax.persistence.MappedSuperclass

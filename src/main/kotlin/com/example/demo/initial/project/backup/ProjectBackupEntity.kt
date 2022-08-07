@@ -1,6 +1,6 @@
 package com.example.demo.initial.project.backup
 
-import com.example.demo.initial.project.ProjectBaseEntity
+import com.example.demo.initial.project.base.ProjectBaseEntity
 import javax.persistence.Entity
 
 @Entity(name = "p_project_bak")

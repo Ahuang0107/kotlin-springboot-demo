@@ -4,5 +4,6 @@ enum class ProjectStage {
   NOT_STARTED,
   DRAFT,
   RMA,
-  PASSED
+  PASSED,
+  REDRAFT
 }

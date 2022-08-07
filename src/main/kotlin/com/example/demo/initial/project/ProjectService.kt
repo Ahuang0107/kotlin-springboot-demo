@@ -1,9 +1,9 @@
 package com.example.demo.initial.project
 
-import com.example.demo.base.dataaccess.service.BaseService
+import com.example.demo.initial.project.base.ProjectServiceBase
 import org.springframework.stereotype.Service
 
 @Service
 class ProjectService(
   override val repo: ProjectRepo,
-) : BaseService<ProjectEntity>
+) : ProjectServiceBase<ProjectEntity>(repo)

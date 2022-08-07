@@ -1,5 +1,5 @@
 package com.example.demo.initial.project
 
-import com.example.demo.base.dataaccess.repository.BaseSimpleRepo
+import com.example.demo.initial.project.base.ProjectRepoBase
 
-interface ProjectRepo : BaseSimpleRepo<ProjectEntity>
+interface ProjectRepo : ProjectRepoBase<ProjectEntity>

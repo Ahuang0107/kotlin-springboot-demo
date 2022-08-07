@@ -1,7 +1,7 @@
 package com.example.demo.initial.project.backup
 
-import com.example.demo.base.dataaccess.repository.BaseSimpleRepo
+import com.example.demo.initial.project.base.ProjectRepoBase
 
-interface ProjectBackupRepo : BaseSimpleRepo<ProjectBackupEntity> {
+interface ProjectBackupRepo : ProjectRepoBase<ProjectBackupEntity> {
   fun findAllByRelProjectId(relProjectId: Long): List<ProjectBackupEntity>
 }
