@@ -7,6 +7,7 @@ import javax.persistence.MappedSuperclass
 
 @MappedSuperclass
 open class ProjectBaseEntity(
+  var financeYear: Int = 0,
   var projectName: String = "",
   var engageCode: String = "",
   var totalFee: Double = .0,

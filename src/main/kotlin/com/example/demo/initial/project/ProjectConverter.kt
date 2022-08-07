@@ -4,6 +4,7 @@ import com.example.demo.initial.project.backup.ProjectBackupEntity
 
 fun ProjectEntity.updateFrom(source: UpdateProjectReq): ProjectEntity {
   return this.apply {
+    financeYear = source.financeYear
     projectName = source.projectName
     engageCode = source.engageCode
     totalFee = source.totalFee
@@ -12,6 +13,7 @@ fun ProjectEntity.updateFrom(source: UpdateProjectReq): ProjectEntity {
 
 fun ProjectBackupEntity.updateFrom(source: ProjectEntity): ProjectBackupEntity {
   return this.apply {
+    financeYear = source.financeYear
     projectName = source.projectName
     engageCode = source.engageCode
     totalFee = source.totalFee

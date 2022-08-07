@@ -1,5 +1,5 @@
 ### get all member by project id
-GET /api/member/all?projectId=1
+GET /api/member/all?projectId=1418499500632313856
 Host: {{host}}:{{port}}
 
 ### create member

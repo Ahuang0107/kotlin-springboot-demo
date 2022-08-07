@@ -9,6 +9,7 @@ drop table if exists p_project;
 create table p_project
 (
     id           bigint                   not null,
+    finance_year int2                     not null,
     project_name varchar(255)             not null,
     engage_code  varchar(255)             not null,
     total_fee    decimal(12, 2)           not null default 0,
@@ -24,6 +25,7 @@ create table p_project_bak
 (
     id             bigint                   not null,
     rel_project_id bigint                   not null,
+    finance_year   int2                     not null,
     project_name   varchar(255)             not null,
     engage_code    varchar(255)             not null,
     total_fee      decimal(12, 2)           not null default 0,
@@ -43,9 +45,10 @@ create table p_member
     member_gpn     varchar(255)             not null,
     total_hours    decimal(12, 2)           not null default 0,
     total_ser      decimal(12, 2)           not null default 0,
-    statistics     json                     null,
-    hours          json                     not null,
+    statistics     jsonb                    null,
+    hours          jsonb                    not null,
     create_at      timestamp with time zone not null,
     update_at      timestamp with time zone not null,
-    primary key (id)
+    primary key (id),
+    constraint project_staff_constraint unique (rel_project_id, member_gpn)
 );
