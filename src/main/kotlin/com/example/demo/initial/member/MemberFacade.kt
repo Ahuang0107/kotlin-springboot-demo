@@ -1,6 +1,9 @@
 package com.example.demo.initial.member
 
 import com.example.demo.initial.member.backup.MemberBackupService
+import com.example.demo.initial.member.primary.MemberEntity
+import com.example.demo.initial.member.primary.MemberService
+import com.example.demo.initial.member.request.UpdateMemberReq
 import org.springframework.stereotype.Service
 
 @Service

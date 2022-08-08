@@ -1,8 +1,6 @@
 package com.example.demo.initial.member.base
 
 import com.example.demo.base.dataaccess.entity.BaseEntity
-import com.example.demo.initial.member.Hour
-import com.example.demo.initial.member.MemberStatistics
 import org.hibernate.annotations.Type
 import javax.persistence.MappedSuperclass
 

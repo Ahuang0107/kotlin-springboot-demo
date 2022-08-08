@@ -1,4 +1,4 @@
-package com.example.demo.initial.member
+package com.example.demo.initial.member.primary
 
 import com.example.demo.initial.member.base.MemberServiceBase
 import org.springframework.stereotype.Service

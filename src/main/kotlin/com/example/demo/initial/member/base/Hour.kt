@@ -1,4 +1,4 @@
-package com.example.demo.initial.member
+package com.example.demo.initial.member.base
 
 import java.time.LocalDate
 

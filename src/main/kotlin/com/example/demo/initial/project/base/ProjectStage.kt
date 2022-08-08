@@ -1,4 +1,4 @@
-package com.example.demo.initial.project
+package com.example.demo.initial.project.base
 
 enum class ProjectStage {
   NOT_STARTED,

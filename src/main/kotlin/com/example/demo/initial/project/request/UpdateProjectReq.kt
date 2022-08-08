@@ -1,4 +1,4 @@
-package com.example.demo.initial.project
+package com.example.demo.initial.project.request
 
 data class UpdateProjectReq(
   var financeYear: Int = 0,

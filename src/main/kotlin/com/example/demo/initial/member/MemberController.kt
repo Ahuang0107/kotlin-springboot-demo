@@ -3,6 +3,8 @@ package com.example.demo.initial.member
 import com.example.demo.base.property.SystemConst
 import com.example.demo.base.restful.AppResponse
 import com.example.demo.base.restful.successResult
+import com.example.demo.initial.member.primary.MemberEntity
+import com.example.demo.initial.member.request.UpdateMemberReq
 import org.springframework.web.bind.annotation.*
 
 @RestController

@@ -1,4 +1,4 @@
-package com.example.demo.initial.member
+package com.example.demo.initial.member.base
 
 data class MemberStatistics(
   var hoursBeforeOctober: Double = .0,

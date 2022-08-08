@@ -1,6 +1,8 @@
 package com.example.demo.initial.project
 
 import com.example.demo.initial.project.backup.ProjectBackupEntity
+import com.example.demo.initial.project.primary.ProjectEntity
+import com.example.demo.initial.project.request.UpdateProjectReq
 
 fun ProjectEntity.updateFrom(source: UpdateProjectReq): ProjectEntity {
   return this.apply {

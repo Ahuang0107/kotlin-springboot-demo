@@ -1,4 +1,5 @@
-CREATE TYPE project_stage AS ENUM (
+drop type if exists project_stage;
+create type project_stage as enum (
     'NOT_STARTED',
     'DRAFT',
     'RMA',
@@ -51,4 +52,21 @@ create table p_member
     update_at      timestamp with time zone not null,
     primary key (id),
     constraint project_staff_constraint unique (rel_project_id, member_gpn)
+);
+
+drop table if exists p_member_bak;
+create table p_member_bak
+(
+    id             bigint                   not null,
+    rel_project_id bigint                   not null,
+    member_name    varchar(255)             not null,
+    member_gpn     varchar(255)             not null,
+    total_hours    decimal(12, 2)           not null default 0,
+    total_ser      decimal(12, 2)           not null default 0,
+    statistics     jsonb                    null,
+    hours          jsonb                    not null,
+    create_at      timestamp with time zone not null,
+    update_at      timestamp with time zone not null,
+    primary key (id),
+    constraint bak_project_staff_constraint unique (rel_project_id, member_gpn)
 );

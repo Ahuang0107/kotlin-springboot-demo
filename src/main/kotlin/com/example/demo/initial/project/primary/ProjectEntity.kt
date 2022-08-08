@@ -1,4 +1,4 @@
-package com.example.demo.initial.project
+package com.example.demo.initial.project.primary
 
 import com.example.demo.initial.project.base.ProjectBaseEntity
 import javax.persistence.Entity
